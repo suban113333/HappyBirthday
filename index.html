@@ -1,0 +1,47 @@
+
+<html lang="en" >
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="theme-color" content="#004E7D">
+<meta content='RingRoad' name='Author' />
+<title></title>
+<link rel="shortcut icon" type="image/png" href="favicon.png"/>
+<link rel="stylesheet" href="css/style.css">
+<script type="text/javascript" src="js/jquery.js"></script>
+<script  src="js/custom.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+    
+  var audio  = new Audio('https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/click.mp3');
+  var audio2 = new Audio('https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/clickUp.mp3')
+
+  $(".btn").mousedown(function() {
+    audio2.load();
+    audio2.play();
+  });
+	
+  $(".btn").mouseup(function() {
+    audio.load();
+    audio.play();
+  });
+
+  $(".btn").touchstart(function() {
+    audio2.load();
+    audio2.play();
+  });
+
+  $(".btn").touchend(function() {
+    audio2.load();
+    audio2.play();
+  });
+});
+</script>
+</head>
+<body>
+<div class="container">
+	<header class="main-header">
+		<div class="top-border"></div>
+<h1 class="appbar-title shine">SMKN 6 JEMBER</h1>
+<span class="appbar-description">Internet Unlimited Tanpa Bat
